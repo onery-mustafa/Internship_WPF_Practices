@@ -7,6 +7,7 @@ namespace Internship_WPF_Practices
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
