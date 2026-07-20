@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Internship_WPF_Practices"
+        xmlns:UserControls="clr-namespace:Internship_WPF_Practices.View.UserControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="300">
     <Grid>
@@ -15,11 +16,20 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-
+        
+        <!-- İlk önce bunlar yazılmıştı. ClearableTextBox.xaml tamamlandıktan sonra aşağıdakiler silind ve yenileri eklendi.
         <TextBox Grid.Row="1" Width="250" Height="40" />
         <TextBox Grid.Row="2" Width="250" Height="40" />
         <TextBox Grid.Row="3" Width="250" Height="40" />
         <TextBox Grid.Row="4" Width="250" Height="40" />
+        -->
+
+        <UserControls:ClearableTextBox Grid.Row="1" Width="250" Height="40" />
+        <UserControls:ClearableTextBox Grid.Row="2" Width="250" Height="40" />
+        <UserControls:ClearableTextBox Grid.Row="3" Width="250" Height="40" />
+        <UserControls:ClearableTextBox Grid.Row="4" Width="250" Height="40" />
+
+
 
     </Grid>
 </Window>
