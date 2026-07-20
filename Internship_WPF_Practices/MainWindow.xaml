@@ -24,7 +24,7 @@
         <TextBox Grid.Row="4" Width="250" Height="40" />
         -->
 
-        <UserControls:ClearableTextBox Grid.Row="1" Width="250" Height="40" />
+        <UserControls:ClearableTextBox Grid.Row="1" Width="250" Height="40"  />
         <UserControls:ClearableTextBox Grid.Row="2" Width="250" Height="40" />
         <UserControls:ClearableTextBox Grid.Row="3" Width="250" Height="40" />
         <UserControls:ClearableTextBox Grid.Row="4" Width="250" Height="40" />

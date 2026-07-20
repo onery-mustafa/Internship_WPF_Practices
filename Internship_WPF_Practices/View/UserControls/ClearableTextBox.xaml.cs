@@ -23,6 +23,14 @@ namespace Internship_WPF_Practices.View.UserControls
             InitializeComponent();
         }
 
+        private string placeholder;
+
+        public string Placeholder
+        {
+            get { return placeholder; }
+            set { placeholder= value; }
+        }
+
         private void btnClearClick(object sender, RoutedEventArgs e)
         {
             txtInput.Clear();
@@ -31,7 +39,14 @@ namespace Internship_WPF_Practices.View.UserControls
 
         private void txtInput_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            if(string.IsNullOrEmpty(txtInput.Text))
+            {
+                tbPlaceHolder.Visibility = Visibility.Visible; // TextBox boşsa yer tutucu metnini göster
+            }
+            else
+            {
+                tbPlaceHolder.Visibility = Visibility.Hidden; // TextBox doluysa yer tutucu metnini gizle
+            }
         }
     }
 }
