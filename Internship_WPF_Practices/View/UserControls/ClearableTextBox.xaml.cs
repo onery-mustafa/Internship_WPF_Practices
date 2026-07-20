@@ -28,7 +28,12 @@ namespace Internship_WPF_Practices.View.UserControls
         public string Placeholder
         {
             get { return placeholder; }
-            set { placeholder= value; }
+            set 
+            {
+                placeholder = value;
+                tbPlaceHolder.Text = placeholder; // Yer tutucu metnini güncelle
+
+            }
         }
 
         private void btnClearClick(object sender, RoutedEventArgs e)
