@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="40" d:DesignWidth="250">
     <Grid>
-        <TextBox x:Name="txtInput" Text="Hello There!" VerticalAlignment="Center" FontSize="16" FontWeight="Light" />
+        <TextBox x:Name="txtInput" Text="Hello There!" VerticalContentAlignment="Center" FontSize="16" FontWeight="Light" />
         <Button Name="btnClear" Width="30" />
     </Grid>
 </UserControl>
