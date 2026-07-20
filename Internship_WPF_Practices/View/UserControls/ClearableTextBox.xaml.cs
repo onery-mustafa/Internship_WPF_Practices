@@ -22,5 +22,16 @@ namespace Internship_WPF_Practices.View.UserControls
         {
             InitializeComponent();
         }
+
+        private void btnClearClick(object sender, RoutedEventArgs e)
+        {
+            txtInput.Clear();
+            txtInput.Focus(); // kutu temizlendikten sonra imleci tekrar kutuya odaklamak için
+        }
+
+        private void txtInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

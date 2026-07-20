@@ -6,11 +6,14 @@
              xmlns:local="clr-namespace:Internship_WPF_Practices.View.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="40" d:DesignWidth="250">
-    <Grid>
-        <TextBox x:Name="txtInput" VerticalContentAlignment="Center" FontSize="16" FontWeight="Light" />
+    
+    <Grid Background="White">
+        
+        <TextBox x:Name="txtInput" VerticalContentAlignment="Center" FontSize="16" FontWeight="Light"
+                 Background="Transparent" TextChanged="txtInput_TextChanged" />
         <TextBlock x:Name="tbPlaceHolder" Text="Hello there" FontSize="16" FontWeight="Light" Foreground="DarkGray" 
-                   VerticalAlignment="Center" Margin="5,0,0,0"/>
+                   VerticalAlignment="Center" Margin="5,0,0,0" Panel.ZIndex="-1"/>
         <Button Name="btnClear" Width="30" HorizontalAlignment="Right" Content="X" Background="Transparent" 
-                Foreground="LightGray" BorderThickness="0"/>
+                Foreground="LightGray" BorderThickness="0" Click="btnClearClick"/>
     </Grid>
 </UserControl>
