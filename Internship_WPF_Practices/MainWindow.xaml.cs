@@ -14,9 +14,9 @@ namespace Internship_WPF_Practices
         {
             // MessageBox.Show("Coluld not open file", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error); // Mesaj Kutusunu açar
 
-            MessageBox.Show("Coluld not open file");
+            MessageBox.Show("Could not open file");
 
-            MessageBoxResult result = MessageBox.Show("Coluld not open file", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error); // Mesaj kutusu kapatıldığında, mesaj kutusunun sonucunu result değişkenine atar.
+            MessageBoxResult result = MessageBox.Show("Could not open file", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error); // Mesaj kutusu kapatıldığında, mesaj kutusunun sonucunu result değişkenine atar.
             // "OK" düğmesine basılmayıp pencere kapatılırsa, sonucumuz yine "OK" olacaktır.
 
             MessageBoxResult result2 = MessageBox.Show("Do you agree?", "Agreement", MessageBoxButton.YesNo, MessageBoxImage.Question);
