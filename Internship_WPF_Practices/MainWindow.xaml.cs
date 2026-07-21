@@ -12,7 +12,23 @@ namespace Internship_WPF_Practices
 
         private void btn_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Coluld not open file", "ERROR!"); // Mesaj Kutusunu açar
+            // MessageBox.Show("Coluld not open file", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error); // Mesaj Kutusunu açar
+
+            MessageBoxResult result = MessageBox.Show("Coluld not open file", "ERROR!", MessageBoxButton.OK, MessageBoxImage.Error); // Mesaj kutusu kapatıldığında, mesaj kutusunun sonucunu result değişkenine atar.
+            // "OK" düğmesine basılmayıp pencere kapatılırsa, sonucumuz yine "OK" olacaktır.
+
+            MessageBoxResult result2 = MessageBox.Show("Do you agree?", "Agreement", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            // mesaj kutusu kapatılana kadar hiçbir şey çalışmaya devam etmeyecektir
+
+            if(result2 == MessageBoxResult.Yes)
+            {
+                tbInfo.Text = "Agreed";
+            }
+            else
+            {
+                tbInfo.Text = "Not Agreed";
+            }
+
         }
     }
 }
