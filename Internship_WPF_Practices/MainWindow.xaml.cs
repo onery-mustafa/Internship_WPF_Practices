@@ -6,8 +6,23 @@ namespace Internship_WPF_Practices
     {
         public MainWindow()
         {
+            DataContext = this;
             InitializeComponent();
 
+        }
+
+        private string boundText;
+
+        public string BoundText
+        {
+            get { return boundText; }
+
+            set
+            {
+                boundText = value;
+                // OnPropertyChanged();
+
+            }
         }
     }
 }
