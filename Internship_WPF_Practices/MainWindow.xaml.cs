@@ -9,5 +9,10 @@ namespace Internship_WPF_Practices
             InitializeComponent();
 
         }
+
+        private void btn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Coluld not open file", "ERROR!"); // Mesaj Kutusunu açar
+        }
     }
 }
