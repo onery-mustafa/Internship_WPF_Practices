@@ -22,8 +22,26 @@ namespace Internship_WPF_Practices
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-            int index = IvEntries.SelectedIndex; // Seçili öğenin indeksini al
-            IvEntries.Items.RemoveAt(index); // Seçili öğeyi kaldır
+            // 1: tekli seçim. nesnenin dizi numarasını alma. 
+            /*  int index = IvEntries.SelectedIndex; // Seçili öğenin indeksini al
+                IvEntries.Items.RemoveAt(index); // Seçili öğeyi kaldır
+             */
+
+            // 2: tekli seçim. öğenin kendisini alma
+            /*  object item = IvEntries.SelectedItem; // Seçili öğeyi seçili diziye tercih ederiz. çünkü öğenin kendisiyle işlem yapmak isteyebiliriz. öğenin ne olduğunu bilmemiz gereken bir uygulama yapabilliriz.
+              var result = MessageBox.Show($"Are you sure you want to delete: {(string)item}", "Sure?", MessageBoxButton.YesNo ); // buradaki string koruma amaçlı. eğer öğe string değilse hata almamak için.
+              if(result == MessageBoxResult.Yes) IvEntries.Items.Remove(item);
+            */
+
+            // 3: Çoklu seçim. öğenin kendisini alma.
+            var items = IvEntries.SelectedItems;
+            var result = MessageBox.Show($"Are you sure you want to delete {items.Count} items", "Sure?", MessageBoxButton.YesNo);
+            if(result == MessageBoxResult.Yes)
+            {
+                foreach (var item in items) IvEntries.Items.Remove(item);
+            }
+           
+
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
