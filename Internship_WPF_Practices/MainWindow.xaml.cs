@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Collections;
 
 namespace Internship_WPF_Practices
 {
@@ -38,7 +39,9 @@ namespace Internship_WPF_Practices
             var result = MessageBox.Show($"Are you sure you want to delete {items.Count} items", "Sure?", MessageBoxButton.YesNo);
             if(result == MessageBoxResult.Yes)
             {
-                foreach (var item in items) IvEntries.Items.Remove(item);
+                 var itemsList = new ArrayList(items);
+                // var itemsList = items; //foreach ın içine items yazmış gibi yine hata alırız
+                foreach (var item in itemsList) IvEntries.Items.Remove(item);
             }
            
 
