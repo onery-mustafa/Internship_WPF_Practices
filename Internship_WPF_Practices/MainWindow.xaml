@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Internship_WPF_Practices"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="400">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Fill="Black" />
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Rectangle Fill="DarkBlue" />
+            <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" /> <!-- varsayılan olarak yüksekliği dolduruyor ancak yatay olarak uzamıyor-->
+            <Rectangle Grid.Column="2" Fill="DarkRed" />
+            <GridSplitter Grid.Column="3" HorizontalAlignment="Stretch" />
+            <Rectangle Grid.Column="4" Fill="DarkGreen" />
+        </Grid>
+
+        <GridSplitter Grid.Row="2" HorizontalAlignment="Stretch"/>
+
+        <Rectangle Grid.Row="3" Fill="Gray" />
+        
 
     </Grid>
 </Window>
