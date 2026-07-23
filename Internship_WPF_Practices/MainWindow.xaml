@@ -12,5 +12,36 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Height="40" Width="75" Margin="2" Content="A" />
+            <Button Height="40" Width="75" Margin="2" Content="B" />
+            <Button Height="40" Width="75" Margin="2" Content="C" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="20"> <!-- StackPanel ölçülendirilmediği için tüm satırı kapladı-->
+            
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                <Label Content="Label: " />
+                <TextBox Width="150" />
+                <Button Content="GO" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                <Label Content="Label: " />
+                <TextBox Width="150" />
+                <Button Content="GO" />
+            </StackPanel>
+
+            <ComboBox Width="150" Height="30" Margin="2" /> <!-- Açılır Kutu-->
+            <TextBox Width="150" Height="30" Margin="2" />
+            <TextBox Width="150" Height="30" Margin="2" />
+            <TextBox Width="150" Height="30" Margin="2" />
+            <TextBox Width="150" Height="30" Margin="2" />
+        </StackPanel> 
+
+       
+
+
+
     </Grid>
 </Window>
