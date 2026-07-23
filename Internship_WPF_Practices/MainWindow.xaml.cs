@@ -9,5 +9,10 @@ namespace Internship_WPF_Practices
             InitializeComponent();
 
         }
+
+        private void btnDetails_Click(object sender, RoutedEventArgs e)
+        {
+            ExpanderDetails.IsExpanded = !ExpanderDetails.IsExpanded;  // Bu bir özelliktir. true veya false olarak ayarlanabilir. 
+        }
     }
 }
