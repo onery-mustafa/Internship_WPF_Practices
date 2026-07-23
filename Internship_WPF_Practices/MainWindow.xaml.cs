@@ -49,7 +49,9 @@ namespace Internship_WPF_Practices
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
-            IvEntries.Items.Clear();
+            var result = MessageBox.Show("Are you sure you want to delete all items?", "Sure", MessageBoxButton.YesNo);
+            if(result == MessageBoxResult.Yes) IvEntries.Items.Clear();
+
         }
 
         
