@@ -37,11 +37,10 @@
             <TextBox Width="150" Height="30" Margin="2" />
             <TextBox Width="150" Height="30" Margin="2" />
             <TextBox Width="150" Height="30" Margin="2" />
+            
         </StackPanel> 
 
        
-
-
 
     </Grid>
 </Window>
