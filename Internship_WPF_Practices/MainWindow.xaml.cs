@@ -7,12 +7,13 @@ namespace Internship_WPF_Practices
     {
         public MainWindow()
         {
-         // listeyi önceden doldurma:
-        /*  InitializeComponent();
-            IvEntries.Items.Add("A");
-            IvEntries.Items.Add("B");
-            IvEntries.Items.Add("C");
-        */
+            InitializeComponent();
+            // listeyi önceden doldurma:
+            /*  
+                IvEntries.Items.Add("A");
+                IvEntries.Items.Add("B");
+                IvEntries.Items.Add("C");
+            */
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
