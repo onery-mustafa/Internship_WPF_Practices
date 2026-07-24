@@ -3,10 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Internship_WPF_Practices"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:local="clr-namespace:Internship_WPF_Practices" Background="#333333"
+        mc:Ignorable="d" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButton"
+        Title="MainWindow" Height="300" Width="300">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
 
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnMinimize" Content="-" Width="40" Height="40" BorderBrush="Transparent" Background="Transparent" Click="btnMinimize_Click" Foreground="White"/>
+            <Button x:Name="btnMaximize" Content="⬜" Width="40" Height="40" BorderBrush="Transparent" Background="Transparent" Click="btnMaximize_Click" Foreground="White"/>
+            <Button x:Name="btnClose" Content="X" Width="40" Height="40" BorderBrush="Transparent" Background="Transparent" Click="btnClose_Click" Foreground="White"/>
+        </StackPanel>
     </Grid>
 </Window>
