@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:Internship_WPF_Practices" Background="#333333"
         mc:Ignorable="d" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButton"
         Title="MainWindow" Height="300" Width="300">
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0" />
+    </WindowChrome.WindowChrome>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
