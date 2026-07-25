@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Internship_WPF_Practices.View"
         mc:Ignorable="d"
-        Title="ModalWindow" Height="450" Width="800">
+        Title="ModalWindow" Height="150" Width="250">
     <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <TextBox />
+        </StackPanel>
         
     </Grid>
 </Window>
