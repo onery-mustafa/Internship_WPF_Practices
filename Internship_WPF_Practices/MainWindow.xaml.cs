@@ -23,6 +23,9 @@ namespace Internship_WPF_Practices
 
             ModalWindow ModalWindow = new ModalWindow();
             ModalWindow.ShowDialog();
+
+            if(ModalWindow.Success)  txtInput.Text = ModalWindow.Input;
+            
         }
     }
 }
