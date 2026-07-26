@@ -21,17 +21,22 @@
                 </MenuItem>
                 <MenuItem Header="Edit" FontSize="16"/>
             </Menu>
-
-            <Grid Grid.Row="1">
+            
+            <!-- 1. Yöntem: Alt satıra yeni bir Grid tanımlama -->
+       <!--     <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="auto"/>
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
 
                 <Button Width="50" Margin="5"/>
-                <TextBox Grid.Column="1" Width="150" Margin="5"/>
-
-            </Grid>
+            <TextBox Grid.Column="1" Width="150" Margin="5"/>
+            </Grid>  -->
+        
+        <!-- 2. Yöntem: Stack Panel ile-->
+        
+        
+        
         </Grid>
 
 
