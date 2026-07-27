@@ -9,8 +9,9 @@ namespace Internship_WPF_Practices
             InitializeComponent();
 
             Starting.Text = "ROBOCAM PLUS";
-            Thread.Sleep(1000);
-            Starting.Text = "TEZMAKSAN";
+           // Thread.Sleep(1000);
+           // Starting.Text = "TEZMAKSAN";
+
 
         }
     }
