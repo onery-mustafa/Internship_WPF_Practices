@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:Internship_WPF_Practices"
         mc:Ignorable="d" WindowStyle="None"
         Title="MainWindow" Height="450" Width="800">
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0" />
+    </WindowChrome.WindowChrome>
     <Grid Background="Black">
         <TextBox Name="Starting" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White" BorderThickness="0"/>
 
