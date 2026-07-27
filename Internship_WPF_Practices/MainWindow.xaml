@@ -4,10 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Internship_WPF_Practices"
-        mc:Ignorable="d"
+        mc:Ignorable="d" WindowStyle="None"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="DarkMagenta">
-        <TextBox Text="Hello!" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    <Grid Background="Black">
+        <TextBox Name="Starting" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White" BorderThickness="0"/>
 
     </Grid>
 </Window>

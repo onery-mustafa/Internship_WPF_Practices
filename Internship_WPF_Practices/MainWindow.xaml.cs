@@ -8,6 +8,10 @@ namespace Internship_WPF_Practices
         {
             InitializeComponent();
 
+            Starting.Text = "ROBOCAM PLUS";
+            
+            Starting.Text = "TEZMAKSAN";
+
         }
     }
 }
