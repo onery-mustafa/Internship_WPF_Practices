@@ -1,8 +1,9 @@
 ﻿using System.Windows;
+using System.ComponentModel;
 
 namespace Internship_WPF_Practices
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
         public MainWindow()
         {
@@ -12,6 +13,8 @@ namespace Internship_WPF_Practices
         }
 
         private string boundText;
+
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         public string BoundText
         {
@@ -37,8 +40,6 @@ https://canertosuner.com/post/inotifypropertychanged-nedir-nasil-kullanilir
 
 C# Masterclass 1307 Dependency Properties
 https://www.youtube.com/watch?v=jJZsSiVWDqE
-
-https://www.yazilimkodlama.com/wpf/wpf-baslangicta-acilacak-formu-belirleme/#google_vignette
 
 https://learn.microsoft.com/tr-tr/dotnet/desktop/wpf/data/how-to-implement-property-change-notification
 
