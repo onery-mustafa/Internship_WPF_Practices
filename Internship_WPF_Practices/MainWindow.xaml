@@ -10,7 +10,12 @@
         <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0" />
     </WindowChrome.WindowChrome>
     <Grid Background="Black">
-        <TextBox Name="Starting" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="White" BorderThickness="0"/>
+        <TextBox Name="Starting" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Foreground="Blue" BorderThickness="0"/>
 
     </Grid>
 </Window>
+    
+    <!--
+    Background="PaleVioletRed"
+    
+    -->
