@@ -6,7 +6,7 @@ namespace Internship_WPF_Practices
     {
         public MainWindow()
         {
-            DataContext = this; // Veri bağlamı özelliği bu arka plan kod dosyasına ayarladık. 
+            DataContext = this; // Veri bağlamı özelliğini bu arka plan kod dosyasına ayarladık. 
             InitializeComponent();
 
         }
