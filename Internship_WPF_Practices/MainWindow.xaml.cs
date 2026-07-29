@@ -7,6 +7,7 @@ namespace Internship_WPF_Practices
     {
         public MainWindow()
         {
+            DataContext = this; // (bu, veri bağlamı olacak olan arka plan kodudur. Böylece koleksiyon girişlerini nerede bulacağını bilir. 
             InitializeComponent();
  
         }
