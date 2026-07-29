@@ -23,9 +23,23 @@ namespace Internship_WPF_Practices
             set
             {
                 boundText = value;
+                OnPropertyChanged("BoundText");
+
+                // PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("BoundText"));
+                // Yukarıdaki uzun kodu GUI miz büyümeye başladığında her seferinde yeniden yazmak yerine özellik değişikliği olayında başka bir yöntem (alt satırdaki isimle) oluşturabilir ve bu yöntemle olayımuzı çağırabiliriz.
                 // OnPropertyChanged();
 
+
             }
+        }
+
+        private void btnSet_Click(object sender, RoutedEventArgs e)
+        {
+            BoundText = "set from code";
+        }
+        private void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

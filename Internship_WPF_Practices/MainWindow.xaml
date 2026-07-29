@@ -14,9 +14,12 @@
         </Grid.RowDefinitions>
 
         <TextBox Name="txtInput" VerticalContentAlignment="Center" Width="250" Height="40" 
-                 FontSize="16" Text="{Binding BoundText}" />
+                 FontSize="16" Text="{Binding BoundText, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" />
+        <!-- varsayılan olarak Mode iki yönlüdür. Yani bir şey yazılmazsa BoundText i hem TextBox tan hem de Set butonundan ayarlayabiliyoruz. 
+             OneWayToSource ile sadece GUI den kaynak özelliğimize tek yönlü veri gider. Özelliğimizden GUI'ye veri gitmez (özelliği kodumuzdan ayarlayamayız). Yani Set Butonu çalışmayacaktır.
+             Dikkat edilirse butona basıldığında TextBox güncellenmezken TextBlock güncellenecektir. Çünkü TextBlock varsayılan olarak bırakılmıştır. -->
 
-        <Button Grid.Row="1" Name="btnSet" Content="Set" Width="100" Height="40" />
+        <Button Grid.Row="1" Name="btnSet" Content="Set" Width="100" Height="40" Click="btnSet_Click"/>
         
         <TextBlock Grid.Row="2" Name="tbResult" FontSize="16" Text="{Binding BoundText}" 
                    VerticalAlignment="Center" HorizontalAlignment="Center" />   
