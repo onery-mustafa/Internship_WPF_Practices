@@ -8,4 +8,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <COMReference Include="FRRJIf">
+      <VersionMinor>15</VersionMinor>
+      <VersionMajor>42</VersionMajor>
+      <Guid>347ae5e2-b639-4527-b2ec-9d4f4dc4e7a9</Guid>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
 </Project>

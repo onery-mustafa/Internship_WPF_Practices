@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Internship_WPF_Practices"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="200" Width="300">
     <Grid>
+      <!--  <TextBlock Name="timerView" Text="00:00:00" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>  -->
 
+          <TextBlock x:Name="message" Text="Hello, WPF!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>  
     </Grid>
 </Window>
